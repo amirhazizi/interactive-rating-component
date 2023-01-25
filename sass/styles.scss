@@ -1,2 +1,61 @@
 @import "./utils/config";
 @import "./utils/variables";
+body {
+  background: $cl-veryDarkBlue;
+}
+.state {
+  width: 85vw;
+  max-width: 350px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  &-s {
+    display: grid;
+    gap: 1rem;
+    background: linear-gradient($cl-darkBlue, darken($cl-darkBlue, 9));
+    color: $cl-white;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    img {
+      background: lighten($cl-darkBlue, 5);
+      padding: 0.8rem;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-weight: 400;
+      color: $cl-mediumGrey;
+      line-height: 1.5;
+    }
+    .form {
+      display: grid;
+      gap: 1rem;
+      div {
+        display: flex;
+        justify-content: space-between;
+        input {
+          background: $cl-Orange;
+          color: $cl-white;
+          padding: 0.9rem 1.1rem;
+          border-radius: 150px;
+          border: none;
+        }
+      }
+    }
+    button {
+      background: $cl-Orange;
+      text-transform: uppercase;
+      color: white;
+      padding: 0.8rem;
+      letter-spacing: 2px;
+      border-radius: 50px;
+    }
+  }
+  &-e {
+    display: none;
+  }
+}
