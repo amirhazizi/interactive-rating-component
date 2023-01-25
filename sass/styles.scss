@@ -12,6 +12,7 @@ body {
   place-items: center;
   &-s {
     display: grid;
+    // display: none;
     gap: 1rem;
     background: linear-gradient($cl-darkBlue, darken($cl-darkBlue, 6));
     color: $cl-white;
@@ -21,7 +22,7 @@ body {
       background: lighten($cl-darkBlue, 3);
       padding: 0.8rem;
       border-radius: 50px;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
     h1 {
       font-size: 1.5rem;
@@ -54,11 +55,40 @@ body {
       text-transform: uppercase;
       color: white;
       padding: 1rem;
+      font-size: 1rem;
       letter-spacing: 2px;
       border-radius: 50px;
     }
   }
   &-e {
+    display: grid;
     display: none;
+    text-align: center;
+    gap: 1rem;
+    background: linear-gradient($cl-darkBlue, darken($cl-darkBlue, 6));
+    color: $cl-white;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    img {
+      margin: 0 auto;
+    }
+    .result {
+      color: lighten($cl-Orange, 13);
+      background: lighten($cl-darkBlue, 3);
+      padding: 0.7rem;
+      padding-bottom: 0.2rem;
+      border-radius: 50px;
+      width: 60%;
+      margin: 1rem auto;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-weight: 400;
+      color: $cl-mediumGrey;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
   }
 }

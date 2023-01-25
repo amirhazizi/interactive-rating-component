@@ -44,7 +44,7 @@ body {
   background: #2b3540;
   padding: 0.8rem;
   border-radius: 50px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .state-s h1 {
   font-size: 1.5rem;
@@ -77,9 +77,38 @@ body {
   text-transform: uppercase;
   color: white;
   padding: 1rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   border-radius: 50px;
 }
 .state-e {
+  display: grid;
   display: none;
+  text-align: center;
+  gap: 1rem;
+  background: linear-gradient(hsl(213deg, 19%, 18%), #191e24);
+  color: hsl(0deg, 0%, 100%);
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+}
+.state-e img {
+  margin: 0 auto;
+}
+.state-e .result {
+  color: #fc9a54;
+  background: #2b3540;
+  padding: 0.7rem;
+  padding-bottom: 0.2rem;
+  border-radius: 50px;
+  width: 60%;
+  margin: 1rem auto;
+}
+.state-e h1 {
+  font-size: 1.5rem;
+}
+.state-e p {
+  font-weight: 400;
+  color: hsl(216deg, 12%, 54%);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
