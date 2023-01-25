@@ -25,7 +25,7 @@ body {
 }
 
 .state {
-  width: 85vw;
+  width: 95vw;
   max-width: 350px;
   margin: 0 auto;
   min-height: 100vh;
@@ -35,13 +35,13 @@ body {
 .state-s {
   display: grid;
   gap: 1rem;
-  background: linear-gradient(hsl(213deg, 19%, 18%), #13171b);
+  background: linear-gradient(hsl(213deg, 19%, 18%), #191e24);
   color: hsl(0deg, 0%, 100%);
   padding: 2rem 1.5rem;
   border-radius: 15px;
 }
 .state-s img {
-  background: #303a46;
+  background: #2b3540;
   padding: 0.8rem;
   border-radius: 50px;
   margin-bottom: 1rem;
@@ -53,6 +53,7 @@ body {
   font-weight: 400;
   color: hsl(216deg, 12%, 54%);
   line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 .state-s .form {
   display: grid;
@@ -61,11 +62,13 @@ body {
 .state-s .form div {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 .state-s .form div input {
-  background: hsl(25deg, 97%, 53%);
-  color: hsl(0deg, 0%, 100%);
-  padding: 0.9rem 1.1rem;
+  background: #2b3540;
+  color: hsl(216deg, 12%, 54%);
+  font-size: 1rem;
+  padding: 0.9rem 1.2rem;
   border-radius: 150px;
   border: none;
 }
@@ -73,7 +76,7 @@ body {
   background: hsl(25deg, 97%, 53%);
   text-transform: uppercase;
   color: white;
-  padding: 0.8rem;
+  padding: 1rem;
   letter-spacing: 2px;
   border-radius: 50px;
 }

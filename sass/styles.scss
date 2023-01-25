@@ -4,7 +4,7 @@ body {
   background: $cl-veryDarkBlue;
 }
 .state {
-  width: 85vw;
+  width: 95vw;
   max-width: 350px;
   margin: 0 auto;
   min-height: 100vh;
@@ -13,12 +13,12 @@ body {
   &-s {
     display: grid;
     gap: 1rem;
-    background: linear-gradient($cl-darkBlue, darken($cl-darkBlue, 9));
+    background: linear-gradient($cl-darkBlue, darken($cl-darkBlue, 6));
     color: $cl-white;
     padding: 2rem 1.5rem;
     border-radius: 15px;
     img {
-      background: lighten($cl-darkBlue, 5);
+      background: lighten($cl-darkBlue, 3);
       padding: 0.8rem;
       border-radius: 50px;
       margin-bottom: 1rem;
@@ -30,6 +30,7 @@ body {
       font-weight: 400;
       color: $cl-mediumGrey;
       line-height: 1.5;
+      margin-bottom: 0.5rem;
     }
     .form {
       display: grid;
@@ -37,10 +38,12 @@ body {
       div {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 0.5rem;
         input {
-          background: $cl-Orange;
-          color: $cl-white;
-          padding: 0.9rem 1.1rem;
+          background: lighten($cl-darkBlue, 3);
+          color: $cl-mediumGrey;
+          font-size: 1rem;
+          padding: 0.9rem 1.2rem;
           border-radius: 150px;
           border: none;
         }
@@ -50,7 +53,7 @@ body {
       background: $cl-Orange;
       text-transform: uppercase;
       color: white;
-      padding: 0.8rem;
+      padding: 1rem;
       letter-spacing: 2px;
       border-radius: 50px;
     }
