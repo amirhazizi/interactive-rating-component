@@ -24,7 +24,7 @@ body {
   background: hsl(216deg, 12%, 8%);
 }
 
-#resetstyle, .state-s button, .state-s .form div input {
+#resetstyle, .state-s button, .state-s .form div .btn {
   border: none;
   border-radius: 150px;
   cursor: pointer;
@@ -72,18 +72,19 @@ body {
   justify-content: space-between;
   margin-bottom: 0.5rem;
 }
-.state-s .form div input {
+.state-s .form div .btn {
   background: #2b3540;
   color: hsl(216deg, 12%, 54%);
   padding: 0.9rem 1.2rem;
 }
-.state-s .form div input:hover {
-  background: #55677c;
+.state-s .form div .select-btn {
+  background: hsl(25deg, 97%, 53%);
+  color: white;
 }
 .state-s button {
   background: hsl(25deg, 97%, 53%);
-  text-transform: uppercase;
   color: white;
+  text-transform: uppercase;
   padding: 1rem;
   letter-spacing: 2px;
 }
@@ -91,8 +92,10 @@ body {
   color: hsl(25deg, 97%, 53%);
   background: hsl(0deg, 0%, 100%);
 }
+.state .disable {
+  display: none;
+}
 .state-e {
-  display: grid;
   display: none;
   text-align: center;
   gap: 1rem;
@@ -121,4 +124,7 @@ body {
   color: hsl(216deg, 12%, 54%);
   line-height: 1.5;
   margin-bottom: 0.5rem;
+}
+.state .enable {
+  display: grid;
 }

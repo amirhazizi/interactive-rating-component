@@ -47,22 +47,26 @@ body {
         display: flex;
         justify-content: space-between;
         margin-bottom: 0.5rem;
-        input {
+        .btn {
           @extend #resetstyle;
           background: lighten($cl-darkBlue, 3);
           color: $cl-mediumGrey;
           padding: 0.9rem 1.2rem;
-          &:hover {
-            background: lighten($cl-darkBlue, 23);
-          }
+          // &:hover {
+          //   background: lighten($cl-darkBlue, 23);
+          // }
+        }
+        .select-btn {
+          background: $cl-Orange;
+          color: white;
         }
       }
     }
     button {
       @extend #resetstyle;
       background: $cl-Orange;
-      text-transform: uppercase;
       color: white;
+      text-transform: uppercase;
       padding: 1rem;
       letter-spacing: 2px;
       &:hover {
@@ -71,8 +75,11 @@ body {
       }
     }
   }
+  .disable {
+    display: none;
+  }
   &-e {
-    display: grid;
+    // display: grid;
     display: none;
     text-align: center;
     gap: 1rem;
@@ -101,5 +108,8 @@ body {
       line-height: 1.5;
       margin-bottom: 0.5rem;
     }
+  }
+  .enable {
+    display: grid;
   }
 }
