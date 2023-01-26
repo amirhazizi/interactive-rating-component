@@ -3,6 +3,13 @@
 body {
   background: $cl-veryDarkBlue;
 }
+#resetstyle {
+  border: none;
+  border-radius: $radius * 10;
+  cursor: pointer;
+  transition: $transition;
+  font-size: 1rem;
+}
 .state {
   width: 95vw;
   max-width: 350px;
@@ -17,11 +24,11 @@ body {
     background: linear-gradient($cl-darkBlue, darken($cl-darkBlue, 6));
     color: $cl-white;
     padding: 2rem 1.5rem;
-    border-radius: 15px;
+    border-radius: $radius;
     img {
       background: lighten($cl-darkBlue, 3);
       padding: 0.8rem;
-      border-radius: 50px;
+      border-radius: $radius * 10;
       margin-bottom: 0.5rem;
     }
     h1 {
@@ -41,23 +48,27 @@ body {
         justify-content: space-between;
         margin-bottom: 0.5rem;
         input {
+          @extend #resetstyle;
           background: lighten($cl-darkBlue, 3);
           color: $cl-mediumGrey;
-          font-size: 1rem;
           padding: 0.9rem 1.2rem;
-          border-radius: 150px;
-          border: none;
+          &:hover {
+            background: lighten($cl-darkBlue, 23);
+          }
         }
       }
     }
     button {
+      @extend #resetstyle;
       background: $cl-Orange;
       text-transform: uppercase;
       color: white;
       padding: 1rem;
-      font-size: 1rem;
       letter-spacing: 2px;
-      border-radius: 50px;
+      &:hover {
+        color: $cl-Orange;
+        background: $cl-white;
+      }
     }
   }
   &-e {

@@ -24,6 +24,14 @@ body {
   background: hsl(216deg, 12%, 8%);
 }
 
+#resetstyle, .state-s button, .state-s .form div input {
+  border: none;
+  border-radius: 150px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  font-size: 1rem;
+}
+
 .state {
   width: 95vw;
   max-width: 350px;
@@ -43,7 +51,7 @@ body {
 .state-s img {
   background: #2b3540;
   padding: 0.8rem;
-  border-radius: 50px;
+  border-radius: 150px;
   margin-bottom: 0.5rem;
 }
 .state-s h1 {
@@ -67,19 +75,21 @@ body {
 .state-s .form div input {
   background: #2b3540;
   color: hsl(216deg, 12%, 54%);
-  font-size: 1rem;
   padding: 0.9rem 1.2rem;
-  border-radius: 150px;
-  border: none;
+}
+.state-s .form div input:hover {
+  background: #55677c;
 }
 .state-s button {
   background: hsl(25deg, 97%, 53%);
   text-transform: uppercase;
   color: white;
   padding: 1rem;
-  font-size: 1rem;
   letter-spacing: 2px;
-  border-radius: 50px;
+}
+.state-s button:hover {
+  color: hsl(25deg, 97%, 53%);
+  background: hsl(0deg, 0%, 100%);
 }
 .state-e {
   display: grid;
