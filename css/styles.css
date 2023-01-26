@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 *,
 ::after,
 ::before {
@@ -20,16 +24,167 @@ body {
   font-family: "Overpass", sans-serif;
 }
 
-body {
-  background: hsl(216deg, 12%, 8%);
-}
-
-#resetstyle, .state-e button, .state-s button, .state-s .form div .btn {
+#resetstyle, .back-btn, .form button, .form div .btn {
   border: none;
   border-radius: 150px;
   cursor: pointer;
-  transition: all 200ms linear;
   font-size: 1rem;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+#resetstyle, .back-btn, .form button, .form div .btn {
+  border: none;
+  border-radius: 150px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+footer {
+  position: fixed;
+  min-width: 310px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 11px;
+  text-align: center;
+  background: hsl(213deg, 19%, 18%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.1rem 0.5rem;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+}
+footer a {
+  color: hsl(25deg, 97%, 53%);
+  font-weight: bold;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+#resetstyle, .back-btn, .form div .btn, .form button {
+  border: none;
+  border-radius: 150px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+.form div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.form div .btn {
+  background: #2b3540;
+  color: hsl(216deg, 12%, 54%);
+  padding: 0.9rem 1.2rem;
+}
+.form div .hover-btn {
+  background: #637892;
+}
+.form div .selected-btn {
+  background: #445364;
+}
+.form div .select-btn {
+  background: hsl(25deg, 97%, 53%);
+  color: white;
+}
+.form button {
+  background: hsl(25deg, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem;
+  letter-spacing: 2px;
+}
+.form button:hover {
+  color: hsl(25deg, 97%, 53%);
+  background: hsl(0deg, 0%, 100%);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+#resetstyle, .form div .btn, .form button, .back-btn {
+  border: none;
+  border-radius: 150px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.back-btn {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 0.4rem 0.7rem;
+  background: #637892;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.8rem;
+}
+.back-btn i {
+  font-size: 1rem;
+}
+
+body {
+  background: hsl(216deg, 12%, 8%);
 }
 
 .state {
@@ -63,44 +218,6 @@ body {
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
-.state-s .form {
-  display: grid;
-  gap: 1rem;
-}
-.state-s .form div {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-}
-.state-s .form div .btn {
-  background: #2b3540;
-  color: hsl(216deg, 12%, 54%);
-  padding: 0.9rem 1.2rem;
-}
-.state-s .form div .hover-btn {
-  background: #637892;
-}
-.state-s .form div .selected-btn {
-  background: #445364;
-}
-.state-s .form div .select-btn {
-  background: hsl(25deg, 97%, 53%);
-  color: white;
-}
-.state-s button {
-  background: hsl(25deg, 97%, 53%);
-  color: white;
-  text-transform: uppercase;
-  padding: 1rem;
-  letter-spacing: 2px;
-}
-.state-s button:hover {
-  color: hsl(25deg, 97%, 53%);
-  background: hsl(0deg, 0%, 100%);
-}
-.state .unshow-div {
-  display: none;
-}
 .state-e {
   display: none;
   position: relative;
@@ -133,20 +250,11 @@ body {
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
-.state-e button {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  padding: 0.4rem 0.7rem;
-  background: #637892;
-  color: white;
-  font-size: 0.8rem;
-}
-.state-e button i {
-  font-size: 1rem;
-}
 .state .show-div {
   display: grid;
+}
+.state .unshow-div {
+  display: none;
 }
 
 @media (min-width: 976px) {

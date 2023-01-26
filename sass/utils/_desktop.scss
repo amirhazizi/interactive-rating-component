@@ -1,0 +1,13 @@
+@media (min-width: 976px) {
+  .state {
+    max-width: 400px;
+    &-s {
+      padding: 2rem 2rem;
+      border-radius: $radius * 2;
+    }
+    &-e {
+      padding: 2rem 2rem;
+      border-radius: $radius * 2;
+    }
+  }
+}

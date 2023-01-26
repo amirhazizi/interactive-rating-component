@@ -1,0 +1,14 @@
+@use "../utils/config";
+.back-btn {
+  @extend #resetstyle;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 0.4rem 0.7rem;
+  background: lighten($cl-darkBlue, 30);
+  color: $cl-white;
+  font-size: 0.8rem;
+  i {
+    font-size: 1rem;
+  }
+}
