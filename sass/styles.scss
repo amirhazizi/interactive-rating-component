@@ -19,7 +19,6 @@ body {
   place-items: center;
   &-s {
     display: grid;
-    // display: none;
     gap: 1rem;
     background: linear-gradient($cl-darkBlue, darken($cl-darkBlue, 6));
     color: $cl-white;
@@ -52,9 +51,12 @@ body {
           background: lighten($cl-darkBlue, 3);
           color: $cl-mediumGrey;
           padding: 0.9rem 1.2rem;
-          // &:hover {
-          //   background: lighten($cl-darkBlue, 23);
-          // }
+        }
+        .hover-btn {
+          background: lighten($cl-darkBlue, 30);
+        }
+        .selected-btn {
+          background: lighten($cl-darkBlue, 15);
         }
         .select-btn {
           background: $cl-Orange;
@@ -75,28 +77,29 @@ body {
       }
     }
   }
-  .disable {
+  .unshow-div {
     display: none;
   }
   &-e {
-    // display: grid;
     display: none;
+    position: relative;
     text-align: center;
     gap: 1rem;
     background: linear-gradient($cl-darkBlue, darken($cl-darkBlue, 6));
     color: $cl-white;
     padding: 2rem 1.5rem;
-    border-radius: 15px;
+    border-radius: $radius;
     img {
       margin: 0 auto;
     }
     .result {
       color: lighten($cl-Orange, 13);
       background: lighten($cl-darkBlue, 3);
-      padding: 0.7rem;
+      padding: 0.5rem;
+      font-size: 0.8rem;
       padding-bottom: 0.2rem;
       border-radius: 50px;
-      width: 60%;
+      width: 55%;
       margin: 1rem auto;
     }
     h1 {
@@ -108,8 +111,35 @@ body {
       line-height: 1.5;
       margin-bottom: 0.5rem;
     }
+    button {
+      @extend #resetstyle;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      padding: 0.4rem 0.7rem;
+      background: lighten($cl-darkBlue, 30);
+      color: white;
+      font-size: 0.8rem;
+      i {
+        font-size: 1rem;
+      }
+    }
   }
-  .enable {
+  .show-div {
     display: grid;
+  }
+}
+
+@media (min-width: 976px) {
+  .state {
+    max-width: 400px;
+    &-s {
+      padding: 2rem 2rem;
+      border-radius: $radius * 2;
+    }
+    &-e {
+      padding: 2rem 2rem;
+      border-radius: $radius * 2;
+    }
   }
 }
