@@ -1,5 +1,6 @@
 @use "./variables";
 $radius: 15px;
+$transition: all 200ms linear;
 *,
 ::after,
 ::before {
@@ -21,5 +22,6 @@ body {
   border: none;
   border-radius: $radius * 10;
   cursor: pointer;
+  transition: $transition;
   font-size: 1rem;
 }
